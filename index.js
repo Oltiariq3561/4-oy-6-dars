@@ -125,7 +125,20 @@
 // }
 // console.log(res);
 
-// 7- TO'G'RISI TUSHUNMADIM
+// 7. **Massivdagi elementlarning yig'indisini hisoblang va massivdagi har bir elementni shu yig'indiga bo'lingan elementlardan iborat yangi massiv hosil qiling.**
+// let arr = [1,2,3,4,5,6];
+// let res = [];
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] > 0){
+//         sum = sum + arr[i];
+//     }
+//     if(sum % arr[i] == 0){
+//         res.push(arr[i])
+//     }
+// }
+// console.log(sum);
+// console.log(res);
 
 // 8. **Massivdagi har bir elementni o'zidan oldingi element bilan almashtiring (birinchi elementni o'z holida qoldiring).**
 // let arr = [40, 15, 25, 12];
@@ -144,3 +157,37 @@
 //     }
 // }
 // console.log(res.length);
+
+// 10. **Berilgan massivdagi elementlarning yig'indisini toping, lekin faqat manfiy sonlarni hisobga oling.**
+// let arr = [40, -15, 25, -12];
+// let res = 0;
+// for (const iterator of arr) {
+//     if (iterator < 0) {
+//         res = res + iterator;
+//     }
+// }
+// console.log(res);
+
+// 12. **Massivdagi barcha musbat sonlarning ko'paytmasini hisoblang.**
+// let arr = [40, -15, 25, -12];
+// let res = 1;
+// for (const iterator of arr) {
+//     if (iterator >= 0) {
+//         res = res * iterator;
+//     }
+// }
+// console.log(res);
+
+// 13. **Berilgan massivdan eng uzun va eng qisqa satr elementlarni toping.**
+// let arr = ['salom', 'qalesan', 'zor','alik',];
+// let max = arr[0];
+// let min = arr[0];
+// for (const iterator of arr) {
+//     if (iterator.length >= max.length) {
+//  max=iterator
+//     }else if (iterator.length <= min.length) {
+//         min = iterator
+//     }
+// }
+// console.log(max, 'max');
+// console.log(min, 'min');
